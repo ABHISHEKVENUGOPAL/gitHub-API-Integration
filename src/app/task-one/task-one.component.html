@@ -1,0 +1,11 @@
+<div id="task-one" class="task-container-class">
+    <mat-card class="gitrepo-card" *ngFor="let item of gitRepos.list">
+        <mat-card-header>
+          <mat-card-title>{{item.repoName}}</mat-card-title>
+          <mat-card-subtitle>{{item.repoOwnerLogin}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{item.repoDescription}}</p>
+        </mat-card-content>       
+      </mat-card>
+</div>
